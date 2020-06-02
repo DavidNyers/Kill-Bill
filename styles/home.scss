@@ -1,0 +1,13 @@
+// MAIN COLORS
+$colors: (
+  red: #cd100d,
+  red-light: #e7252a,
+  yellow: #f9c900,
+  yellow-light: #f7d6e0,
+  black: #060e1e,
+);
+// Function to call the color
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+// How to call the function e.g.  --->>>  color: color(red);
