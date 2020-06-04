@@ -1,0 +1,266 @@
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+footer {
+  margin: 100px 0px 0px 0px;
+  height: 26.3vh;
+  font-family: Helvetica;
+  background: var(--bg-solar);
+  color: var(--text-solar);
+  -webkit-transition: color 500ms ease-in-out, background 1000ms ease-in-out;
+  transition: color 500ms ease-in-out, background 1000ms ease-in-out;
+  text-decoration: none;
+}
+
+.wrapper-footer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  pointer-events: none;
+}
+
+.footer-characters h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer-characters a {
+  width: 50%;
+  pointer-events: auto;
+}
+
+.footer-characters a:hover {
+  color: var(--footer-text-hover);
+}
+
+.footer-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer-more a {
+  width: 70%;
+  pointer-events: auto;
+}
+
+.footer-more a:hover {
+  color: var(--footer-text-hover);
+}
+
+.footer-logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer-logo img {
+  width: 250px;
+  -webkit-filter: var(--logo-brightness);
+          filter: var(--logo-brightness);
+}
+
+.footer-logo img:hover {
+  -webkit-animation: color-rotate 3s;
+          animation: color-rotate 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.footer-social-us {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.social-media-icons img {
+  width: 25px;
+  height: 25px;
+  -webkit-filter: var(--logo-brightness);
+          filter: var(--logo-brightness);
+}
+
+.about-us {
+  margin: 20px 0px 0px 0px;
+}
+
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --red1: #e7252a;
+  --red2: #cd100d;
+  --red3: #e01e37;
+  --red4: #da1e37;
+  --red5: #c71f37;
+  --red6: #bd1f36;
+  --red7: #b21e35;
+  --red8: #a71e34;
+  --red9: #a11d33;
+  --red10: #85182a;
+  --red11: #6e1423;
+  --red12: #641220;
+  --yellow1: #fed403;
+  --yellow2: #f9c900;
+  --yellow3: #fff75e;
+  --yellow4: #fff056;
+  --yellow5: #ffe94e;
+  --yellow6: #ffe246;
+  --yellow7: #ffda3d;
+  --yellow8: #ffd53e;
+  --yellow9: #fecf3e;
+  --yellow10: #fdc43f;
+  --yellow11: #fdbe39;
+  --yellow12: #fdb833;
+  --black: #0e0e0e;
+  --brightness-black: brightness(-100%);
+  --brightness-white: brightness(200%);
+}
+
+.red {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray0), var(--gray1));
+  --bg-dropdown: var(--yellow1);
+  --text: var(--black);
+  --border-color: var(--gray0);
+  --text-solar: var(--gray0);
+  --bg-solar: linear-gradient(to right, var(--red9), var(--red1));
+  --bg-scroll: var(--gray0);
+  --bg-scroll-hover: var(--black);
+  --button-scroll: var(--red1);
+  --bg-footer: var(--red2);
+  --footer-text-hover: var(--yellow2);
+  --logo-brightness: var(--brightness-white);
+  --to-top: var(--black);
+  --to-top-color: var(--gray0);
+  --bg-card: var(--gray0);
+  --text-card: var(--black);
+  --bottom-bg-card: var(--red2);
+  --bottom-text-card: var(--gray0);
+  --text-content: var(--red4);
+}
+
+.yellow {
+  --bg: var(--black);
+  --bg-nav: linear-gradient(to right, var(--gray6), var(--black));
+  --bg-dropdown: var(--red1);
+  --text: var(--gray0);
+  --border-color: var(--black);
+  --text-solar: var(--gray6);
+  --bg-solar: linear-gradient(to right, var(--yellow3), var(--yellow2));
+  --button-scroll: var(--yellow1);
+  --bg-scroll: var(--black);
+  --bg-scroll-hover: var(--gray0);
+  --bg-footer: var(--yellow2);
+  --footer-text-hover: var(--red1);
+  --logo-brightness: var(--brightness-black);
+  --to-top: var(--gray0);
+  --to-top-color: var(--black);
+  --bg-card: var(--gray6);
+  --text-card: var(--gray0);
+  --bottom-bg-card: linear-gradient(to right, var(--yellow10), var(--yellow12));
+  --bottom-text-card: var(--black);
+  --text-content: var(--yellow1);
+}
+/*# sourceMappingURL=footer.css.map */

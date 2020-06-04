@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.wrapper-navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--bg-nav);
+  color: var(--text);
+  -webkit-transition: color 500ms ease-in-out, background 1000ms ease-in-out;
+  transition: color 500ms ease-in-out, background 1000ms ease-in-out;
+}
+
+.navbar {
+  height: 70px;
+  width: 70%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  list-style: none;
+}
+
+.dropdown {
+  position: absolute;
+  width: 500px;
+  opacity: 0;
+  z-index: 2;
+  border-top: 2px solid var(--border-color);
+  list-style: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 4rem;
+  margin-top: 2rem;
+  -webkit-box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+          box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  background: var(--bg-dropdown);
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+  pointer-events: none;
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-item a {
+  width: 100%;
+  height: 100%;
+  size: 0.7rem;
+  padding: 0px 0px 0px 10px;
+  font-weight: bold;
+}
+
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --red1: #e7252a;
+  --red2: #cd100d;
+  --red3: #e01e37;
+  --red4: #da1e37;
+  --red5: #c71f37;
+  --red6: #bd1f36;
+  --red7: #b21e35;
+  --red8: #a71e34;
+  --red9: #a11d33;
+  --red10: #85182a;
+  --red11: #6e1423;
+  --red12: #641220;
+  --yellow1: #fed403;
+  --yellow2: #f9c900;
+  --yellow3: #fff75e;
+  --yellow4: #fff056;
+  --yellow5: #ffe94e;
+  --yellow6: #ffe246;
+  --yellow7: #ffda3d;
+  --yellow8: #ffd53e;
+  --yellow9: #fecf3e;
+  --yellow10: #fdc43f;
+  --yellow11: #fdbe39;
+  --yellow12: #fdb833;
+  --black: #0e0e0e;
+  --brightness-black: brightness(-100%);
+  --brightness-white: brightness(200%);
+}
+
+.red {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray0), var(--gray1));
+  --bg-dropdown: var(--yellow1);
+  --text: var(--black);
+  --border-color: var(--gray0);
+  --text-solar: var(--gray0);
+  --bg-solar: linear-gradient(to right, var(--red9), var(--red1));
+  --bg-scroll: var(--gray0);
+  --bg-scroll-hover: var(--black);
+  --button-scroll: var(--red1);
+  --bg-footer: var(--red2);
+  --footer-text-hover: var(--yellow2);
+  --logo-brightness: var(--brightness-white);
+  --to-top: var(--black);
+  --to-top-color: var(--gray0);
+  --bg-card: var(--gray0);
+  --text-card: var(--black);
+  --bottom-bg-card: var(--red2);
+  --bottom-text-card: var(--gray0);
+  --text-content: var(--red4);
+}
+
+.yellow {
+  --bg: var(--black);
+  --bg-nav: linear-gradient(to right, var(--gray6), var(--black));
+  --bg-dropdown: var(--red1);
+  --text: var(--gray0);
+  --border-color: var(--black);
+  --text-solar: var(--gray6);
+  --bg-solar: linear-gradient(to right, var(--yellow3), var(--yellow2));
+  --button-scroll: var(--yellow1);
+  --bg-scroll: var(--black);
+  --bg-scroll-hover: var(--gray0);
+  --bg-footer: var(--yellow2);
+  --footer-text-hover: var(--red1);
+  --logo-brightness: var(--brightness-black);
+  --to-top: var(--gray0);
+  --to-top-color: var(--black);
+  --bg-card: var(--gray6);
+  --text-card: var(--gray0);
+  --bottom-bg-card: linear-gradient(to right, var(--yellow10), var(--yellow12));
+  --bottom-text-card: var(--black);
+  --text-content: var(--yellow1);
+}
+/*# sourceMappingURL=navbar.css.map */
